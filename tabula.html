@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <title>Sūnu tabula</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .table-container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgb(39, 55, 35);
+            color: white;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        th:first-child {
+            border-top-left-radius: 10px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 10px;
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 10px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 10px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        th {
+            background-color: rgb(24, 35, 24);
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        td {
+            font-size: 18px;
+        }
+
+        .status {
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .endangered {
+            background-color: rgb(63, 32, 29);
+        }
+
+        .protected {
+            background-color: rgb(99, 97, 9);
+        }
+
+        .safe {
+            background-color: rgb(25, 81, 25);
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .lists-container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            gap: 40px;
+        }
+
+        .list-section {
+            flex: 1;
+            background-color: rgb(39, 55, 35);
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .list-section h2 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .list-section ul, 
+        .list-section ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        .list-section li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>Apkopojums</h1>
+        <nav>
+            <a href="/sunas/index.html">2025</a>
+            <a href="/sunas/2024sunas.html">2024</a> 
+            <a href="/sunas/sunas2023.html">2023</a>
+            <a href="/sunas/sunas2022.html">2022</a>
+            <a href="/sunas/tabula.html">Apkopojums</a>
+            <a href="/sunas/atsauces.html">Atsauces</a>
+        </nav>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Gads</th>
+                    <th>Nosaukums</th>
+                    <th>Latīniskais nosaukums</th>
+                    <th>Izplatība Latvijā</th>
+                    <th>Statuss</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2025</td>
+                    <td>Spurainā dzīparene</td>
+                    <td class="italic">Palustriella commutata</td>
+                    <td>Vietām visā Latvijā</td>
+                    <td><span class="status endangered">Apdraudēta</span></td>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>Mainīgā spārnene</td>
+                    <td class="italic">Antitrichia curtipendula</td>
+                    <td>Kurzemē un Vidzemē</td>
+                    <td><span class="status protected">Aizsargājama</span></td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>Lielā spuraine</td>
+                    <td class="italic">Rhytidiadelphus triquetrus</td>
+                    <td>Visā Latvijā</td>
+                    <td><span class="status safe">Nav apdraudēta</span></td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Parastā straussūna</td>
+                    <td class="italic">Ptilium crista-castrensis</td>
+                    <td>Visā Latvijā</td>
+                    <td><span class="status safe">Nav apdraudēta</span></td>
+                </tr>
+               
+                </tr>
+            </tbody>
+         
+                        </ul>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="lists-container">
+        <div class="list-section">
+            <h2>Sūnu aizsardzības pasākumi</h2>
+            <ul>
+                <li>Biotopu kartēšana un uzraudzība</li>
+                <li>Mikroliegumu veidošana</li>
+                <li>Sabiedrības izglītošana</li>
+                <li>Regulāra monitoringa veikšana</li>
+                <li>Dabisko dzīvotņu saglabāšana</li>
+            </ul>
+        </div>
+        <div class="list-section">
+            <h2>Izpētes posmi</h2>
+            <ol>
+                <li>Sugu inventarizācija</li>
+                <li>Izplatības kartēšana</li>
+                <li>Populācijas novērtējums</li>
+                <li>Apdraudējumu analīze</li>
+                <li>Aizsardzības plānu izstrāde</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
